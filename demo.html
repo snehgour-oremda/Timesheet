@@ -1,0 +1,18 @@
+<input type="button" value="Open a Popup Window" onclick="window.open('formValidation.html','popUpWindow','height=500,width=700,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
+
+<br>
+<br>
+
+<input type="button" value="button" onclick="createPopupWin('timesheet.php','form',1200,650)">
+
+<script>
+function createPopupWin(pageURL, pageTitle,
+                    popupWinWidth, popupWinHeight) {
+            var left = (screen.width ) ;
+            var top = (screen.height ) ;
+            var myWindow = window.open(pageURL, pageTitle, 
+                    'resizable=yes, width=' + popupWinWidth
+                    + ', height=' + popupWinHeight + ', top='
+                    + top + ', left=' + left);
+}
+</script>
